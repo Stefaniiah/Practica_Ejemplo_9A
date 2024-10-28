@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Usuarios</title>
+</head>
+<body>
+    <h1>USUARIOS</h1>
+    {% for usuario in datos %}
+    <h2>{{ usuario.first_name }} {{ usuario.last_name }}</h2>
+    <p>Correo: {{ usuario.email }}</p>
+    <img src="{{ usuario.avatar }}"/>
+    {% endfor %}
+</body>
+</html>
